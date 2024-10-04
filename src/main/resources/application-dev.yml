@@ -1,0 +1,27 @@
+spring:
+   datasource:
+      url: jdbc:oracle:thin:@localhost:1521:orcl
+      username: c##nhl_v3
+      password: nhl
+      driver.class-name: oracle.jdbc.OracleDriver
+   mvc:
+       view:
+          prefix: /WEB-INF/
+          suffix: .jsp
+   jpa:
+      show-sql: true
+      properies.hibernate.format_sql: true
+      hibernate.ddl-auto: none
+   session:
+      store-type: jdbc
+      jdbc:
+         initialize-schema: always
+      
+application:
+   security:
+      jwt:
+         secret-key: E9778ADCD96BB235F62E7CCB2BFC85A2E43758B3B2F2BFC201D4204D2BA02AD6
+         expiration: 600000
+      guest-credentials:
+         username: Guest
+         password: super_secret_password
