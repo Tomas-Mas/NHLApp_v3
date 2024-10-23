@@ -45,7 +45,7 @@ public class SecurityConfig {
 				.formLogin(form -> form.loginPage("/auth/login"))
 				.logout(logout -> logout
 						.logoutUrl("/auth/logout")
-						.logoutSuccessUrl("/nhl/home"))
+						.logoutSuccessUrl("/test/home"))
 				.sessionManagement(session -> session.maximumSessions(1))
 				//.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 				.addFilterAfter(new GuestUserFilter(authService), UsernamePasswordAuthenticationFilter.class);

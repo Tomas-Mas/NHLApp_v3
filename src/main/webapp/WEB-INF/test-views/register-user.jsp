@@ -9,7 +9,7 @@
 <body>
 	<h1>Register page</h1>
 	
-	<form:form modelAttribute="userRegistrationForm" method="POST" action="/v3/auth/register-submit">
+	<form:form modelAttribute="userRegistrationForm" method="POST" action="/v3/nhl/auth/register-submit">
 		<table>
 			<tr>
 				<td><form:label path="username">Username</form:label></td>
@@ -37,9 +37,9 @@
 		</table>
 	</form:form>
 	
-	<a href="/v3/auth/login">Login</a>
+	<a href="/v3/nhl/auth/login">Login</a>
 	<br>
-	<a href="/v3/nhl/home">Home</a>
+	<a href="/v3/nhl/test/home">Home</a>
 
 </body>
 </html>

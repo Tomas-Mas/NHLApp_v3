@@ -4,4 +4,4 @@ spring:
 
 server:
    servlet:
-      context-path: /v3/
+      context-path: /v3/nhl/

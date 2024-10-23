@@ -34,25 +34,26 @@ public class AuthenticationService {
 	private final String guestPassword;
 	
 	private final AppRoleRepository roleRepo;
-	private final PasswordEncoder passwordEncoder;
 	private final AppUserRepository userRepo;
 	private final TokenRepository tokenRepo;
+	
+	private final PasswordEncoder passwordEncoder;
 	private final AuthenticationManager authManager;
 	
 	public AuthenticationService(
 			@Value("${application.security.guest-credentials.username}") String guestName,
 			@Value("${application.security.guest-credentials.password}") String guestPassword,
 			AppRoleRepository appRoleRepository, 
-			PasswordEncoder passwordEncoder, 
-			AppUserRepository appUserRepository, 
+			AppUserRepository appUserRepository,
 			TokenRepository tokenRepository,
+			PasswordEncoder passwordEncoder,
 			AuthenticationManager authenticationManager) {
 		this.guestName = guestName;
 		this.guestPassword = guestPassword;
 		this.roleRepo = appRoleRepository;
-		this.passwordEncoder = passwordEncoder;
 		this.userRepo = appUserRepository;
 		this.tokenRepo = tokenRepository;
+		this.passwordEncoder = passwordEncoder;
 		this.authManager = authenticationManager;
 	}
 	

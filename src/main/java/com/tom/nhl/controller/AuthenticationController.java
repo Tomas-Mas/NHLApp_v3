@@ -19,6 +19,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
+/**
+ * 
+ * @author Tom
+ *
+ *For testing purposes only
+ */
 @Controller
 @RequestMapping("auth")
 public class AuthenticationController {
@@ -48,7 +54,7 @@ public class AuthenticationController {
 		
 		authService.registerUser(userRegistrationForm);
 		
-		model.setViewName("redirect:/nhl/home");
+		model.setViewName("redirect:/test/home");
 		return model;
 	}
 	
@@ -76,7 +82,7 @@ public class AuthenticationController {
 		
 		authService.loginUser(loginForm, request, session);
 		
-		model.setViewName("redirect:/nhl/home");
+		model.setViewName("redirect:/test/home");
 		return model;
 	}
 	

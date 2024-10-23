@@ -15,15 +15,15 @@
 <p> It has been a while, ${user} </p>
 <p> you have clicked here ${clicks} times </p>
 
-<a href="/v3/admin/">Admin</a>
+<a href="/v3/nhl/admin/">Admin</a>
 <br>
-<a href="/v3/auth/login">Login</a>
+<a href="/v3/nhl/auth/login">Login</a>
 <br>
-<a href="/v3/auth/register">Register</a>
+<a href="/v3/nhl/auth/register">Register</a>
 
 <br><br>
 
-<form id="logoutForm" action="/v3/auth/logout" method="POST">
+<form id="logoutForm" action="/v3/nhl/auth/logout" method="POST">
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     <button type="submit">Logout</button>
 </form>

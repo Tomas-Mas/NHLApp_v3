@@ -9,6 +9,8 @@ import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHtt
 @EnableJpaAuditing
 @EnableJdbcHttpSession
 public class NhlV3Application {
+	
+	//imported entities, title, main menu
 
 	public static void main(String[] args) {
 		SpringApplication.run(NhlV3Application.class, args);

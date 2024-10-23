@@ -1,0 +1,76 @@
+#title {
+	overflow: hidden;
+	padding-bottom: 5px;
+	background-color: var(--htmlBackground);
+}
+
+#title #logo {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 500px;
+	width: 60px;
+	float: left;
+}
+
+#title #logo img:hover {
+	cursor: pointer;
+}
+
+#title #headline {
+	float: left;
+}
+
+#title #headline p {
+	font-size: 50px;
+	color: #e6e6ff;
+	text-align:center;
+	padding-top: 10px;
+	margin: 0px;
+}
+
+#menubar {
+	border: 1px solid var(--menuBorderBackground);
+	background-color: var(--menuBackground);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menubar #menu-season-selector {
+	margin-left: 20px;
+}
+
+#menubar #menu-season-selector select:hover{
+	cursor: pointer;
+}
+
+#menubar #main-menu-nav {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+#menubar #main-menu-nav button {
+	background-color: inherit;
+	color: var(--menuTextColor);
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+#menubar #main-menu-nav button:hover, #menubar #main-menu-nav button:focus {
+	background-color: var(--menuHoverBackground);
+	color: var(--menuHoverTextColor);
+}
+
+#menubar #main-menu-nav button.active {
+	background-color: var(--menuButtonActiveBackground);
+}
+
+#menubar #menu-user {
+	margin-right: 20px;
+}

@@ -12,7 +12,7 @@ Apart from some small tweaks biggest change from v2 is the use of Spring boot, S
 - Spring Web MVC
 - Spring Security
 - Spring Session
-- JPA/Hibernate
+- JPA/Hibernate (6.5.2)
 - JPA Criteria API
 - Tomcat
 - JSTL
@@ -22,15 +22,17 @@ Apart from some small tweaks biggest change from v2 is the use of Spring boot, S
 TODO
 
 # General Description
-After running app, non logged-in users are automatically logged-in as Guest users. <br>
-Requests are served by Spring controllers. <br>
+Request are authorized by Spring security filters. <br>
+Non logged-in users are automatically logged-in as Guest users. <br>
 Data are retrieved from db using JPA criteria API. <br>
-JSP page is then filled using Javascript and styled using CSS. <br>
-Pages are broken down to components, each component then load its data by javascript. This allows for some fancy functionality and in future should make shift to React smoother. <br>
+Controllers then return ModelAndView object containing both jsp page and model with data. <br>
+JSP pages have some interactive features set by javascript. <br>
+Pages are broken down to components, each component is loaded by javascript separately. This allows for some fancy functionality and in future should make shift to Rest controllers/React smoother. <br>
 
 # Current progress
 Only some basic infrastructure and couple of testing views for handling users (register, login). <br>
-More to come in near future!
+Main menu ported, only views for user parts are missing(register/login/logout)
+Main page fully ported. <br>
 
 # Others
 Sql scripts (schema, inserts, views) are in SQL_scripts folder

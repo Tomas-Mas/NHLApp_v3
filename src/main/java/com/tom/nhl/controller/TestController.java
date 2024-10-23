@@ -2,8 +2,6 @@ package com.tom.nhl.controller;
 
 import java.security.Principal;
 
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,8 +9,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpSession;
 
+
+/**
+ * 
+ * @author Tom
+ *
+ *For testing purposes only
+ */
 @Controller
-@RequestMapping("nhl")
+@RequestMapping("test")
 public class TestController {
 
 	@GetMapping("/home")

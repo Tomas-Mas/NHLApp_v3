@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * 
+ * @author Tom
+ *
+ *For testing purposes - only for now at least
+ */
 @Controller
 @RequestMapping("admin")
 public class AdminController {

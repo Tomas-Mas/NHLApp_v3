@@ -6,11 +6,10 @@ spring:
       driver.class-name: oracle.jdbc.OracleDriver
    mvc:
        view:
-          prefix: /WEB-INF/
+          prefix: /WEB-INF/views/
           suffix: .jsp
    jpa:
       show-sql: true
-      properies.hibernate.format_sql: true
       hibernate.ddl-auto: none
    session:
       store-type: jdbc

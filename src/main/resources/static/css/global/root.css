@@ -1,0 +1,45 @@
+body {
+	background-color: var(--htmlBackground);
+	font-family: Arial;
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.error {
+	color: var(--contentMainTableTextColor);
+}
+
+.numeric {
+	text-align: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+:root {
+	--htmlBackground: #000d1a;
+	
+	--menuBackground: #003366;
+	--menuBorderBackground: #004280;
+	--menuTextColor: #cce6ff;
+	--menuHoverBackground: #00284d;
+	--menuHoverTextColor: white;
+	--menuButtonActiveBackground: #ccc;
+	
+	--titleColor: #e6e6ff;
+	
+	--contentMainTableBackground: #1d4163;
+	--contentMainTableRowLine: #cce6ff;
+	--contentMainTableRowHover: #3475b2;
+	--contentMainTableTextColor: var(--titleColor);
+	
+	--contentMainTableMatchData: #0a1b29;
+	
+	--matchWinnerColor: #009900;
+	--matchLoserColor: #cc0000;
+	--matchOtLoserColor: #ff751a;
+	--matchTieColor: #ffc266;
+}

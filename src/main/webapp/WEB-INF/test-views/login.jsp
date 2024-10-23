@@ -12,7 +12,7 @@
 	
 	<p> Hello Mr. ${user} </p>
 	
-	<form:form modelAttribute="loginForm" method="POST" action="/v3/auth/login-submit">
+	<form:form modelAttribute="loginForm" method="POST" action="/v3/nhl/auth/login-submit">
 		<table>
 			<tr>
 				<td><form:label path="username">Username</form:label></td>
@@ -30,9 +30,9 @@
 		</table>
 	</form:form>
 	
-	<a href="/v3/nhl/home">Home</a>
+	<a href="/v3/nhl/test/home">Home</a>
 	<br>
-	<a href="/v3/auth/register">Register</a>
+	<a href="/v3/nhl/auth/register">Register</a>
 
 </body>
 </html>
